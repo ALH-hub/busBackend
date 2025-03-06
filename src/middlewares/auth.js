@@ -1,5 +1,6 @@
 import jwt from 'jsonwebtoken';
 
+// JWT-based protection (e.g., only authenticated users can view their profile)
 export const authMiddleware = (req, res, next) => {
   const token = req.header('Authorization');
   if (!token) return res.status(401).send('Access denied.');
@@ -11,4 +12,12 @@ export const authMiddleware = (req, res, next) => {
   } catch (error) {
     res.status(400).send('Invalid token.');
   }
+};
+
+// Role-based protection (e.g., only admins can add buses)
+export const adminOnly = (req, res, next) => {
+  if (req.user.role !== 'admin') {
+    return res.status(403).json({ error: 'Forbidden. Admin access required.' });
+  }
+  next();
 };

@@ -1,0 +1,39 @@
+
+{
+  "user": {
+    "name": "oumate1",
+    "email": "oumate1@gmail.com",
+    "password": "$2b$10$1FAh9YnUadCZA2zDHYlNIOl2FZpn.Z71s.Ig8g/f1yQhhUXKwuCwC",
+    "role": "operator",
+    "_id": "67c8e00ceec30d2715f0a220",
+    "createdAt": "2025-03-05T23:36:44.025Z",
+    "__v": 0
+  },
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2N2M4ZTAwY2VlYzMwZDI3MTVmMGEyMjAiLCJyb2xlIjoib3BlcmF0b3IiLCJpYXQiOjE3NDEyMTc4MDQsImV4cCI6MTc0MTIzNTgwNH0.04T4saAMei7Jz2bmYpBmg7DUAOE_ZIwtSp9MRd3l8bM"
+}
+
+{
+  "user": {
+    "name": "oumate2",
+    "email": "oumate2@gmail.com",
+    "password": "$2b$10$XrIVLWRcCPBZK7bVOGuKleFCdcZwEHwNclkwBsphlsMNNDfaSwpZW",
+    "role": "admin",
+    "_id": "67c8e052eec30d2715f0a225",
+    "createdAt": "2025-03-05T23:37:54.989Z",
+    "__v": 0
+  },
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2N2M4ZTA1MmVlYzMwZDI3MTVmMGEyMjUiLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3NDEyMTc4NzUsImV4cCI6MTc0MTIzNTg3NX0.jXa3RdiZG7BqtRhfVG0AEPJSSwQwdkebdPQkuIgCVzE"
+}
+
+{
+  "user": {
+    "name": "oumate3",
+    "email": "oumate3@gmail.com",
+    "password": "$2b$10$RTAelngQ7GTl0QaAGqNNwuTPLvT/.6wJPE6z4K2Hp68HYbnXVEAoi",
+    "role": "passenger",
+    "_id": "67c8e194703ccdb10a7ac1c3",
+    "createdAt": "2025-03-05T23:43:16.059Z",
+    "__v": 0
+  },
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2N2M4ZTE5NDcwM2NjZGIxMGE3YWMxYzMiLCJyb2xlIjoicGFzc2VuZ2VyIiwiaWF0IjoxNzQxMjE4MTk2LCJleHAiOjE3NDEyMzYxOTZ9.C3S1OwEMO_r0NVg568rOjjzgtnKLKpdhdEV1U8_nADs"
+}

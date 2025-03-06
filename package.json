@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "start": "node src/index.js",
-    "dev": "nodemon src/index.js",
+    "dev": "nodemon --watch src/controllers --watch src/models --watch src/routes --watch src/config src/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],

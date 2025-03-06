@@ -11,11 +11,6 @@ const bookingSchema = new mongoose.Schema({
     ref: 'Bus',
     required: true,
   },
-  route: {
-    type: mongoose.Schema.Types.ObjectId,
-    ref: 'Route',
-    required: true,
-  },
   tripDate: {
     type: Date,
     required: true,
