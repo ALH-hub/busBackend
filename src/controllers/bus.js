@@ -29,8 +29,6 @@ export const createBus = async (req, res) => {
       req.body;
     const operatorId = req.user._id; // From authMiddleware
 
-    console.log('hello');
-
     const bus = new Bus({
       busNumber,
       route,

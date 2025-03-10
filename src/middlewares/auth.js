@@ -1,4 +1,7 @@
-import jwt from 'jsonwebtoken';
+import jwt, { decode } from 'jsonwebtoken';
+import { config } from 'dotenv';
+
+config();
 
 // JWT-based protection (e.g., only authenticated users can view their profile)
 export const authMiddleware = (req, res, next) => {

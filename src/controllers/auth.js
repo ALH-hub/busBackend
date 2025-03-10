@@ -1,6 +1,11 @@
 import bcrypt from 'bcryptjs';
 import jwt from 'jsonwebtoken';
 import User from '../models/user.js';
+import dotenv from 'dotenv';
+
+dotenv.config();
+
+const secret = process.env.JWT_SECRET;
 
 /**
  * Registers a new user.
@@ -27,10 +32,12 @@ export const registerUser = async (req, res) => {
     const user = new User({ name, email, password: hashedPassword, role });
     await user.save();
 
+    console.log(user);
+
     const token = jwt.sign(
       { _id: user._id, role: user.role },
       process.env.JWT_SECRET,
-      { expiresIn: '5h' },
+      { expiresIn: '5d' },
     );
     res.status(201).json({ user, token });
   } catch (error) {
@@ -61,7 +68,7 @@ export const loginUser = async (req, res) => {
     const token = jwt.sign(
       { _id: user._id, role: user.role },
       process.env.JWT_SECRET,
-      { expiresIn: '1h' },
+      { expiresIn: '5d' },
     );
     res.status(200).json({ user, token });
   } catch (error) {
